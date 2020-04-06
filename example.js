@@ -22,4 +22,3 @@ const prog = lisp(`
 
 // And run it
 console.log(prog()) // prints 2!
-

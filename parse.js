@@ -7,7 +7,7 @@ module.exports = function normalise (s) {
       const next = []
       if (stack.length) stack[stack.length - 1].push(next)
       stack.push(next)
-    } else if (t === ')'){
+    } else if (t === ')') {
       if (!stack.length) throw new Error('Unexpected )')
       if (stack.length === 1) return stack[0]
       stack.pop()
